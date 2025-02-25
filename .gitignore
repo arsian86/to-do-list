@@ -1,0 +1,6 @@
+node_modules/
+# 為什麼 node_modules/ 不能上傳？
+# 	•	node_modules/ 內的檔案是 npm install 下載的，它是從 package.json 來的，並不是你自己寫的程式碼。
+# 	•	這些檔案可能很大！ 一般 node_modules/ 可能超過 數百 MB，如果上傳到 GitHub，會浪費很多空間。
+# 	•	Heroku 或其他伺服器會自動安裝 node_modules/
+# 	•	我們只需要 上傳 package.json，伺服器會根據這個檔案 自動執行 npm install 來安裝所需套件。node_modules/
