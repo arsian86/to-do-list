@@ -134,6 +134,9 @@ const requestListener = (req, res) => {
 };
 
 const server = http.createServer(requestListener);
-server.listen(3005, () => {
+const port = process.env.PORT || 3005;
+server.listen(port, () => {
   console.log("伺服器已經啟動在 http://localhost:3005");
 });
+//雲端環境（Heroku, AWS, GCP）會動態分配 port
+//這樣寫可以確保本地開發時還是可以使用 3005，但遇到雲端環境會自動適應被分配的port。
