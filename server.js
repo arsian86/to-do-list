@@ -2,7 +2,7 @@ const http = require("http");
 const { v4: uuidv4 } = require("uuid");
 const errorHandle = require("./errorHandle");
 
-const todos = [
+const todos = 
   {
     title: "brush teeth",
     id: uuidv4(),
